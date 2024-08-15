@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Linking CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- code for navbar starts from here -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">TaskManager</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="form.html">Forms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="list.html">List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="progressBar.html">Progress</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="taskList.html">Tasks</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            User Profile
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!--This portion of code is for the buttons -->
+
+    <div class="container mt-4">
+        <!-- Buttons -->
+        <h2>Task Management Actions</h2>
+        <div class="d-flex flex-wrap gap-2">
+    
+            <!-- Primary Button -->
+            <button type="button" class="btn btn-primary">Add New Task</button>
+    
+            <!-- Success Button -->
+            <button type="button" class="btn btn-success">Mark as Completed</button>
+    
+            <!-- Info Button -->
+            <button type="button" class="btn btn-info text-white">View Details</button>
+    
+            <!-- Danger Button -->
+            <button type="button" class="btn btn-danger">Delete Task</button>
+    
+            <!-- Warning Button -->
+            <button type="button" class="btn btn-warning">Edit Task</button>
+    
+            <!-- Light Button -->
+            <button type="button" class="btn btn-light">Clear Filters</button>
+    
+            <!-- Dark Button -->
+            <button type="button" class="btn btn-dark">View Archived</button>
+    
+            <!-- Secondary Button -->
+            <button type="button" class="btn btn-secondary">Assign Task</button>
+    
+            <!-- Outline Primary Button -->
+            <button type="button" class="btn btn-outline-primary">Export Data</button>
+    
+            <!-- Outline Success Button -->
+            <button type="button" class="btn btn-outline-success">Import Data</button>
+    
+        </div>
+    </div>
+<!--Buttons code ends here--> 
+
+
+<!--This portions of the code is for Card -->
+<div class="container mt-4">
+    <!-- Task Summary Card -->
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            Task Summary
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Overall Progress</h5>
+            <p class="card-text">Here's a quick overview of your tasks:</p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Total Tasks: <strong>24</strong></li>
+                <li class="list-group-item">Completed Tasks: <strong>16</strong></li>
+                <li class="list-group-item">Pending Tasks: <strong>6</strong></li>
+                <li class="list-group-item">Overdue Tasks: <strong>2</strong></li>
+            </ul>
+            <a href="#" class="btn btn-primary mt-3">View All Tasks</a>
+        </div>
+        <div class="card-footer text-muted">
+            Last updated 3 mins ago
+        </div>
+    </div>
+</div>
+
+<!--Card Code ends here -->
+
+
+<!--code for pagination bar starts from here-->
+<div class="container mt-4">
+    <!-- Pagination -->
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
+                <a class="page-link" href="index.html" aria-label="Home">
+                    <span aria-hidden="true">&laquo;</span> Home
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="form.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="list.html">3</a></li>
+            <li class="page-item"><a class="page-link" href="progressBar.html">4</a></li>
+            <li class="page-item"><a class="page-link" href="taskList.html">5</a></li>
+            <li class="page-item">
+                <a class="page-link" href="taskList.html" aria-label="Last">
+                    Next <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<!--pagination bar ends here-->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
